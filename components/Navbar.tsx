@@ -41,9 +41,9 @@ const Navbar = () => {
       <div
         className={`fixed top-0 z-40 flex flex-wrap items-center justify-between w-full p-6 mx-auto ${
           scrollChange || currentRoute === "/product/[id]"
-            ? "shadow-lg shadow-gray-600/5"
-            : ""
-        } bg-gradient-to-b from-white to-softGray sm:px-10 xl:px-16 sm:py-8 transition duration-300`}
+            ? "shadow-lg shadow-gray-600/5 bg-white"
+            : "bg-gradient-to-b from-white to-softGray"
+        } sm:px-10 xl:px-16 sm:py-8`}
       >
         <Link href={"/"}>
           <div className="flex items-center text-2xl font-medium cursor-pointer text-softBlack">

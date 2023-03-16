@@ -4,7 +4,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div>
-      <div className="grid w-full h-[900px] grid-cols-1 lg:grid-cols-2 bg-softGray">
+      <div className="grid w-full lg:h-[770px] xl:h-[900px] 2xl:h-[1080px] grid-cols-1 lg:grid-cols-2 bg-softGray">
         <div className="w-full h-full">
           <div className="h-[85%] bg-gradient-to-b from-transparent to-softBlack/5 flex flex-col pl-20 pt-60 gap-5">
             <div className="text-7xl w-[550px] font-semibold leading-[90px] text-softBlack">
@@ -15,7 +15,7 @@ const Hero = () => {
               comfortable, this travel reservation prioririzes technology and
               security.
             </div>
-            <div className="w-full h-20 mt-20 bg-white/80"></div>
+            <div className="w-full h-20 mt-20 bg-white"></div>
           </div>
           <div className="h-[15%] bg-white"></div>
         </div>
@@ -28,7 +28,7 @@ const Hero = () => {
             className="flex items-center w-full h-full bg-cover"
             style={{
               backgroundImage:
-                "url(https://source.unsplash.com/random/1080x1920?rocky-mountains)",
+                "url(https://source.unsplash.com/1080x1920?forrest)",
             }}
           >
             <div className="w-40 h-20 xl:mt-[355px] 2xl:mt-[175px] bg-orange"></div>
