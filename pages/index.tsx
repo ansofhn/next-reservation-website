@@ -12,8 +12,8 @@ export default function Home() {
           <title>Tourist Reservation - Home</title>
         </Head>
         <Hero />
-        <Promote />
-        <Category />
+        {/* <Promote /> */}
+        {/* <Category /> */}
       </LandingPageLayout>
     </div>
   );

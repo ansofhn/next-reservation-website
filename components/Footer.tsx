@@ -3,13 +3,13 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <hr className="my-10 border-gray-200 sm:mx-auto" />
+    <div className="bg-white">
+      <hr className="mb-10 border-gray-200 sm:mx-auto" />
       <footer className="p-6 sm:p-10">
         <div className="md:flex md:justify-between">
           <div className="flex flex-col justify-between gap-4 mb-6 md:mb-0">
-            <div className="text-2xl font-bold text-gray-600 uppercase cursor-pointer">
-              Reserville
+            <div className="text-2xl font-medium cursor-pointer text-softBlack">
+              Reser<span className="font-bold">ville</span>
             </div>
             <div className="md:w-[95%] lg:w-[80%] xl:w-[60%] text-xs text-gray-400">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
@@ -21,7 +21,7 @@ const Footer = () => {
 
           <div className="grid justify-end grid-cols-2 gap-10 lg:w-full sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-600 uppercase">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-softBlack">
                 Address
               </h2>
               <div className="text-xs text-gray-400 xl:w-[80%]">
@@ -30,7 +30,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-600 uppercase">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-softBlack">
                 Contact us
               </h2>
               <div className="text-xs text-gray-400">
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-600 uppercase">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-softBlack">
                 Follow us
               </h2>
               <ul className="space-y-2 text-xs text-gray-400">
@@ -74,7 +74,7 @@ const Footer = () => {
               href={"https://www.facebook.com/smknegeri1cibinong"}
               target="_blank"
             >
-              <div className="text-gray-500 hover:text-gray-600">
+              <div className="text-gray-500 hover:text-softBlack">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -93,7 +93,7 @@ const Footer = () => {
               href={"https://www.instagram.com/millenium_update"}
               target="_blank"
             >
-              <div className="text-gray-500 hover:text-gray-600">
+              <div className="text-gray-500 hover:text-softBlack">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -112,7 +112,7 @@ const Footer = () => {
               href={"https://mobile.twitter.com/smkn1cibinongg"}
               target="_blank"
             >
-              <div className="text-gray-500 hover:text-gray-600">
+              <div className="text-gray-500 hover:text-softBlack">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -127,7 +127,7 @@ const Footer = () => {
               href={"https://github.com/ansofhn/next-encrease"}
               target="_blank"
             >
-              <div className="text-gray-500 hover:text-gray-600">
+              <div className="text-gray-500 hover:text-softBlack">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"

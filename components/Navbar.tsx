@@ -15,6 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 80) {
+        console.log(window.scrollY, ":)")
         setScrollChange(true);
       } else {
         setScrollChange(false);
@@ -42,24 +43,24 @@ const Navbar = () => {
           scrollChange || currentRoute === "/product/[id]"
             ? "shadow-lg shadow-gray-600/5"
             : ""
-        } bg-white sm:px-10 sm:py-8 transition duration-300`}
+        } bg-gradient-to-b from-white to-softGray sm:px-10 xl:px-16 sm:py-8 transition duration-300`}
       >
         <Link href={"/"}>
-          <div className="flex items-center text-2xl font-bold text-gray-600 uppercase cursor-pointer">
-            Reserville
+          <div className="flex items-center text-2xl font-medium cursor-pointer text-softBlack">
+            Reser<span className="font-bold">ville</span>
           </div>
         </Link>
 
         <div className="flex items-center md:gap-2 lg:gap-4 lg:order-2">
           <Link href={"/auth/login"}>
-            <button className="px-3 py-2 font-bold text-gray-600 uppercase transition duration-300 border-2 border-gray-600 rounded-md cursor-pointer">
+            <button className="px-3 py-2 font-bold uppercase transition duration-300 border-2 rounded-md cursor-pointer border-softBlack text-softBlack">
               sign in
             </button>
           </Link>
 
           <button
             type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-gray-600 rounded-lg focus:outline-none focus:ring-0 lg:hidden"
+            className="inline-flex items-center p-2 ml-3 text-sm rounded-lg text-softBlack focus:outline-none focus:ring-0 lg:hidden"
             onClick={() => {
               setOpen(!open);
             }}
@@ -79,13 +80,13 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
-        <div className="hidden w-full mt-10 rounded-lg xl:ml-[180px] 2xl:ml-[800px] lg:mt-0 lg:justify-between lg:items-center lg:flex lg:w-auto lg:order-1 bg-white lg:bg-transparent lg:p-0">
-          <div className="flex flex-col gap-4 p-2 font-medium text-gray-600 lg:p-0 lg:flex-row lg:gap-10 lg:font-medium">
+        <div className="hidden w-full mt-10 bg-transparent rounded-lg lg:mt-0 lg:justify-between lg:items-center lg:flex lg:w-auto lg:order-1 lg:p-0">
+          <div className="flex flex-col gap-4 p-2 font-medium text-softBlack lg:p-0 lg:flex-row lg:gap-10 lg:font-medium">
             <Link href={"/"}>
               <div className="relative p-2 cursor-pointer group">
                 Home
                 <div
-                  className={`w-full h-0.5 bg-gray-600/80 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                  className={`w-full h-0.5 bg-softBlack/80 mt-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
                     currentRoute === "/" ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -95,7 +96,7 @@ const Navbar = () => {
               <div className="relative p-2 cursor-pointer group">
                 Services
                 <div
-                  className={`w-full h-0.5 bg-gray-600/80 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                  className={`w-full h-0.5 bg-softBlack/80 mt-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
                     currentRoute === "/product" ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -105,7 +106,7 @@ const Navbar = () => {
               <div className="relative p-2 cursor-pointer group">
                 About
                 <div
-                  className={`w-full h-0.5 bg-gray-600/80 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                  className={`w-full h-0.5 bg-softBlack/80 mt-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
                     currentRoute === "/about" ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -115,7 +116,7 @@ const Navbar = () => {
               <div className="relative p-2 cursor-pointer group">
                 Contact
                 <div
-                  className={`w-full h-0.5 bg-gray-600/80 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
+                  className={`w-full h-0.5 bg-softBlack/80 mt-1 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ${
                     currentRoute === "/contact" ? "scale-x-100" : "scale-x-0"
                   }`}
                 />
@@ -129,7 +130,7 @@ const Navbar = () => {
         {/* Navbar Mobile */}
         {open && (
           <motion.div
-            className="fixed z-40 flex flex-col items-center justify-center w-full h-full text-white bg-black"
+            className="fixed z-40 flex flex-col items-center justify-center w-full h-full bg-darkBlack text-softGray"
             variants={item}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "100vh", opacity: 1 }}
@@ -137,22 +138,22 @@ const Navbar = () => {
             exit="exit"
           >
             {/* <RemoveScrollBar /> */}
-            <div className="fixed top-0 flex flex-wrap items-center justify-between w-full p-6 mx-auto bg-black sm:px-10 sm:py-10 md:py-8">
+            <div className="fixed top-0 flex flex-wrap items-center justify-between w-full p-6 mx-auto bg-darkBlack sm:px-10 sm:py-10 md:py-8">
               <Link href={"/"}>
                 <div
                   onClick={() => {
                     setOpen(!open);
                   }}
-                  className="flex items-center text-2xl font-bold uppercase cursor-pointer text-white/70"
+                  className="flex items-center text-2xl font-medium cursor-pointer text-midGray"
                 >
-                  Reserville
+                  Reser<span className="font-bold">ville</span>
                 </div>
               </Link>
 
               <div className="flex items-center">
                 <button
                   type="button"
-                  className="inline-flex items-center p-2.5 ml-3 text-sm rounded-lg text-white/70 focus:outline-none focus:ring-0 lg:hidden"
+                  className="inline-flex items-center p-2.5 ml-3 text-sm rounded-lg text-midGray focus:outline-none focus:ring-0 lg:hidden"
                   onClick={() => {
                     setOpen(!open);
                   }}
@@ -163,7 +164,7 @@ const Navbar = () => {
             </div>
 
             <motion.div
-              className="inline-flex mb-6 text-base font-light tracking-widest uppercase text-white/70"
+              className="inline-flex mb-6 text-base font-light tracking-widest uppercase text-midGray"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -183,7 +184,7 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
                 className={`inline-flex my-2 text-3xl font-bold ${
-                  currentRoute === "/" ? "text-white" : "text-white/70"
+                  currentRoute === "/" ? "text-softGray" : "text-midGray"
                 } `}
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -208,8 +209,8 @@ const Navbar = () => {
                 className={`inline-flex my-2 text-3xl font-bold ${
                   currentRoute === "/product" ||
                   currentRoute === "/product/[id]"
-                    ? "text-white"
-                    : "text-white/70"
+                    ? "text-softGray"
+                    : "text-midGray"
                 } `}
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -232,7 +233,7 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
                 className={`inline-flex my-2 text-3xl font-bold ${
-                  currentRoute === "/about" ? "text-white" : "text-white/70"
+                  currentRoute === "/about" ? "text-softGray" : "text-midGray"
                 } `}
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -255,7 +256,7 @@ const Navbar = () => {
                   setOpen(!open);
                 }}
                 className={`inline-flex my-2 text-3xl font-bold ${
-                  currentRoute === "/contact" ? "text-white" : "text-white/70"
+                  currentRoute === "/contact" ? "text-softGray" : "text-midGray"
                 } `}
                 initial={{ y: 80, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -273,7 +274,7 @@ const Navbar = () => {
               </motion.div>
             </Link>
             <motion.div
-              className="absolute flex items-center text-xs font-light tracking-widest bottom-6 text-white/70"
+              className="absolute flex items-center text-xs font-light tracking-widest bottom-6 text-midGray"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}

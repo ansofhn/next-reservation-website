@@ -4,7 +4,38 @@ import React from "react";
 const Hero = () => {
   return (
     <div>
-      <div className="py-24 overflow-hidden md:pt-32 md:pb-20 md:px-10 lg:pb-16 lg:pl-32 lg:pr-24 xl:pt-38 xl:px-0 2xl:pt-48 2xl:pr-0 xl:ml-10">
+      <div className="grid w-full h-[900px] grid-cols-1 lg:grid-cols-2 bg-softGray">
+        <div className="w-full h-full">
+          <div className="h-[85%] bg-gradient-to-b from-transparent to-softBlack/5 flex flex-col pl-20 pt-60 gap-5">
+            <div className="text-7xl w-[550px] font-semibold leading-[90px] text-softBlack">
+              Fresh, quiet and peaceful.
+            </div>
+            <div className="pr-4 text-softBlack/70">
+              Feel the sensation of staying in a village! Besides being
+              comfortable, this travel reservation prioririzes technology and
+              security.
+            </div>
+            <div className="w-full h-20 mt-20 bg-white/80"></div>
+          </div>
+          <div className="h-[15%] bg-white"></div>
+        </div>
+        <div className="w-full h-full overflow-hidden">
+          {/* <img
+            src="https://source.unsplash.com/random/1080x1920?rocky-mountains"
+            className="transition duration-500"
+          /> */}
+          <div
+            className="flex items-center w-full h-full bg-cover"
+            style={{
+              backgroundImage:
+                "url(https://source.unsplash.com/random/1080x1920?rocky-mountains)",
+            }}
+          >
+            <div className="w-40 h-20 xl:mt-[355px] 2xl:mt-[175px] bg-orange"></div>
+          </div>
+        </div>
+      </div>
+      {/* <div className="py-24 overflow-hidden md:pt-32 md:pb-20 md:px-10 lg:pb-16 lg:pl-32 lg:pr-24 xl:pt-38 xl:px-0 2xl:pt-48 2xl:pr-0 xl:ml-10">
         <div
           className="flex justify-center w-full h-full bg-center bg-no-repeat lg:justify-start py-44 md:p-10 lg:p-0 2xl:scale-105"
           style={{
@@ -34,7 +65,7 @@ const Hero = () => {
             the village has so much more to offer than just medieval heritage
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

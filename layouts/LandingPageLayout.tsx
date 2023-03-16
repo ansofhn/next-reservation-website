@@ -4,7 +4,7 @@ import React from "react";
 
 const LandingPageLayout = ({ children }: any) => {
   return (
-    <div className="bg-white">
+    <div>
       <Navbar /> 
       {children}
       <Footer />

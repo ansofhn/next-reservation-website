@@ -15,9 +15,16 @@ module.exports = {
         padding: "1rem",
       },
       fontFamily: {
-        poppins: ['var(--font-poppins)'],
+        poppins: ["var(--font-poppins)"],
       },
-      colors: {},
+      colors: {
+        softGray: "#E6E8E9",
+        midGray: "#C1C2BD",
+        softBlack: "#433C39",
+        darkBlack: "#1A1B1C",
+        deepGray: "#80908F",
+        orange: "#fd9319",
+      },
     },
   },
   plugins: [],
