@@ -15,7 +15,7 @@ export default function Home() {
         <Hero />
         {/* <Category /> */}
         <Recommendation />
-        <Promote />
+        {/* <Promote /> */}
       </LandingPageLayout>
     </div>
   );
