@@ -3,7 +3,7 @@ import React from "react";
 const Dashboard = () => {
   return (
     <div className="min-h-screen bg-white pt-52">
-      <div className="p-10 pb-10 mx-8 bg-softGray/80">
+      <div className="p-10 pb-10 mx-8 bg-softGray/70">
         <div className="space-y-10">
           <div className="flex items-center justify-between">
             <div className="text-xl font-semibold text-softBlack/80">
@@ -14,17 +14,17 @@ const Dashboard = () => {
           <div className="grid grid-cols-3 gap-6 xl:grid-cols-4">
             <div className="px-8 py-6 space-y-5 font-medium bg-white rounded-sm text-softBlack/80">
               <div className="text-sm">Total User</div>
-              <div className="text-3xl font-bold">{/* {report?.user} */}</div>
+              <div className="h-10 text-3xl font-bold">{/* {report?.user} */}</div>
             </div>
             <div className="px-8 py-6 space-y-5 font-medium bg-white rounded-sm text-softBlack/80">
               <div className="text-sm">Total Product</div>
-              <div className="text-3xl font-bold">
+              <div className="h-10 text-3xl font-bold">
                 {/* {report?.product} */}
               </div>
             </div>
             <div className="px-8 py-6 space-y-5 font-medium bg-white rounded-sm text-softBlack/80">
               <div className="text-sm">Total Order</div>
-              <div className="text-3xl font-bold">
+              <div className="h-10 text-3xl font-bold">
                 {/* {report?.transaction} */}
               </div>
             </div>
@@ -38,7 +38,7 @@ const Dashboard = () => {
               className={"w-full h-full"}
               options={option}
             /> */}
-              <div className="flex items-center p-3 rounded-sm bg-softGray/80">
+              <div className="flex items-center p-3 rounded-sm bg-softGray/70">
                 <div className="p-3 rounded-sm bg-white flex items-center w-[50%]">
                   <div className="">
                     <div className="text-xl font-semibold text-center text-softBlack/80">
@@ -60,7 +60,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="col-span-3 row-span-2 p-8 space-y-8 bg-white rounded-sm">
-              <div className="text-xl font-semibold text-softBlack/80">
+              <div className="text-xl font-semibold h-60 text-softBlack/80">
                 Revenue
               </div>
               {/* <Bar data={datas} height={102} options={options} /> */}
