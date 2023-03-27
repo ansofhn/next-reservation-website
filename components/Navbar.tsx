@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
 
         <div className="flex items-center md:gap-2 lg:gap-4 lg:order-2">
-          <Link href={"/auth/login"}>
+          <Link href={"/dashboard"}>
             <button className="px-3 py-2 font-bold uppercase transition duration-300 border-2 rounded-md cursor-pointer border-softBlack text-softBlack">
               sign in
             </button>
