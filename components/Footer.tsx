@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-white">
       <hr className="my-10 border-gray-200 sm:mx-auto" />
-      <footer className="p-6 sm:p-10">
+      <footer className="sm:px-10 xl:px-16 sm:py-10">
         <div className="md:flex md:justify-between">
           <div className="flex flex-col justify-between gap-4 mb-6 md:mb-0">
             <div className="text-2xl font-medium cursor-pointer text-softBlack">
@@ -26,7 +26,7 @@ const Footer = () => {
               </h2>
               <div className="text-xs text-gray-400 xl:w-[80%]">
                 Jl. Raya Karadenan No.7, Karadenan, Kec. Cibinong, Kabupaten
-                Bogor, Jawa Barat
+                Bogor
               </div>
             </div>
             <div>
